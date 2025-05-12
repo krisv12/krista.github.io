@@ -1,0 +1,193 @@
+<!-- about.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me - Krista Vera</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+</head>
+<body class="bg-white text-gray-900">
+  <nav class="flex justify-between px-6 py-4 shadow-md sticky top-0 bg-white z-50">
+    <div class="text-xl font-bold">Krista Vera</div>
+    <div class="space-x-6">
+      <a href="work.html">Work</a>
+      <a href="about.html">About Me</a>
+      <a href="resume.html">Resume</a>
+    </div>
+  </nav>
+
+  <section class="px-6 py-12 max-w-4xl mx-auto" id="about">
+      <div class="mt-10 space-y-8 sm:space-y-16 text-left text-xl">
+        <div class="space-y-4 sm:space-y-6">
+          <strong class="block mb-2 sm:mb-4" style="color:#db2777; font-family: 'Patrick Hand', cursive; font-size: 1.5rem;"></strong>
+          <p><em>Welcome to my website!</em> I’m Krista, a creative technologist passionate about product design, project management, and building thoughtful digital experiences — studying Information Science and Advertising/Public Relations at UNC Chapel Hill.
+          </p>
+        </div>
+      
+        <p class="flex items-center text-sm sm:text-base md:text-lg mt-6 ml-0 text-left">
+            <span class="font-medium">You can probably find me:</span>
+            <span class="text-pink-600 handwriting ml-2" id="findMeText">Reading a book</span>
+          </p>
+          
+
+    <script>
+      const activities = [
+        "Scrapbooking in my journal",
+        "Reading a book",
+        "Drinking a coffee",
+        "Watching Buzzfeed Unsolved",
+        "Thrifting",
+        "Writing in Obsidian",
+        "Organizing my calendar",
+        "Picking up a new hobby"
+      ];
+
+      let index = 0;
+      setInterval(() => {
+        const text = document.getElementById('findMeText');
+        text.classList.remove('opacity-100');
+        text.classList.add('opacity-0');
+        setTimeout(() => {
+          text.textContent = activities[index % activities.length];
+          text.classList.remove('opacity-0');
+          text.classList.add('opacity-100');
+          index++;
+        }, 300);
+      }, 3000);
+    </script>
+
+    <style>
+      #findMeText {
+        opacity: 1;
+        font-family: 'Patrick Hand', cursive;
+      }
+    </style>
+
+    <img src="images/krista-headshot.jpeg" class="w-60 rounded-xl mx-auto mt-10 shadow-md border border-gray-200" alt="Krista sitting cross-legged" />
+
+    <div class="mt-10 space-y-8 sm:space-y-16 text-left text-xl">
+        <div class="space-y-4 sm:space-y-6">
+          <strong class="block mb-2 sm:mb-4" style="color:#db2777; font-family: 'Patrick Hand', cursive; font-size: 1.5rem;">My Path:</strong>
+          <p>I didn’t grow up knowing exactly what I wanted to do—but I was always trying something new. One year I was writing a book. The next, I was choreographing dances, learning to code, or designing posters for fun.</p>
+          <p>Whether it was tennis, drawing, or building something from scratch, I followed whatever sparked my interest.</p>
+          <p>That mindset stayed with me. Studying Information Science and Advertising/Public Relations let me channel that creativity into work that blends design, storytelling, and systems thinking. Now, I’m most excited by problems that don’t have clear answers because they push me to learn, adapt, and make something meaningful.</p>
+        </div>
+      
+        <div class="space-y-4 sm:space-y-6">
+          <strong class="block mb-2 sm:mb-4" style="color:#db2777; font-family: 'Patrick Hand', cursive; font-size: 1.5rem;">My Approach:</strong>
+          <ol class="list-decimal list-inside space-y-1">
+            <li>Follow curiosity, even when it leads somewhere unexpected.</li>
+            <li>Build with both structure and soul.</li>
+            <li>Design things that make people feel understood.</li>
+          </ol>
+        </div>
+      </div>
+      
+      <div class="mt-10 text-center border-t pt-10">
+        <h3 class="text-lg font-bold text-pink-600 mb-4" style="font-family: 'Patrick Hand', cursive; font-size: 1.5rem;">Current Roles:</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 items-start justify-center mt-10">
+          <div>
+            <img src="images/carimus-logo.png" class="h-28 w-28 mx-auto rounded-full object-cover" alt="Carimus Logo" />
+            <p class="mt-2 font-semibold" style="font-family: 'Patrick Hand', cursive;">Carimus</p>
+            <p class="text-sm">Project Manager Intern</p>
+          </div>
+          <div>
+            <img src="images/maxam.png" class="h-20 w-20 mx-auto object-contain" alt="Maxam Hotels Logo" />
+            <p class="mt-2 font-semibold" style="font-family: 'Patrick Hand', cursive;">Maxam Hotels</p>
+            <p class="text-sm">Marketing & PR Intern</p>
+          </div>
+          <div>
+            <img src="images/parr.jpg" class="h-24 w-24 mx-auto object-contain" alt="Parr Center Logo" />
+            <p class="mt-2 font-semibold" style="font-family: 'Patrick Hand', cursive;">Parr Center</p>
+            <p class="text-sm">Front-end Engineer; Web Development</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-16 text-center border-t pt-10">
+        <div class="grid grid-cols-3 gap-4 justify-center items-start">
+          <div class="space-y-4">
+            <img src="images/person-photos/suite.jpeg" class="rounded shadow-md w-full object-cover transition-transform duration-300 transform hover:scale-105 hover:shadow-xl" alt="Friends at night" />
+            <img src="images/person-photos/franklin.jpeg" class="rounded shadow-md w-full object-cover transition-transform duration-300 transform hover:scale-105 hover:shadow-xl" alt="Nature walk" />
+          </div>
+          <div class="space-y-4">
+            <img src="images/person-photos/flower.jpeg" class="rounded shadow-md w-full object-cover transition-transform duration-300 transform hover:scale-105 hover:shadow-xl" alt="Pink flowers" />
+          </div>
+          <div class="space-y-4">
+            <img src="images/person-photos/beach.jpeg" class="rounded shadow-md w-full object-cover transition-transform duration-300 transform hover:scale-105 hover:shadow-xl" alt="Group smiling" />
+            <img src="images/person-photos/birthday.jpeg" class="rounded shadow-md w-full object-cover transition-transform duration-300 transform hover:scale-105 hover:shadow-xl" alt="Polaroid moment" />
+          </div>
+        </div>
+
+        <div class="mt-10 space-y-6 text-left text-xl">
+            <div>
+              <strong style="color:#db2777; font-family: 'Patrick Hand', cursive; font-size: 1.5rem;"> The people around me shape the spaces I call home.</strong>
+              <p class="mt-1">It’s not just places that define who I am, it’s the people I’ve shared them with. I’ve grown through conversations over late-night dinners, collaborations with teammates, moments of stillness with close friends, and spontaneous adventures that turned into lasting memories. </p>
+              <p class="mt-1">Every space feels more alive, more meaningful, when it’s built on connection.</p>
+              <p class="mt-1">From creative projects to casual weekends, I carry those relationships with me. They’ve taught me empathy, resilience, and the importance of showing up—not just in work, but in life.</p>
+            </div>
+            <div class="mt-10 text-left">
+                <h3 class="text-lg font-bold text-pink-600 mb-4" style="font-family: 'Patrick Hand', cursive; font-size: 1.5rem;">Current Favorites</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 text-base">
+                  
+                  <div>
+                    <p class="font-semibold underline">Books</p>
+                    <ol class="list-decimal ml-4 mt-1 space-y-1">
+                      <li>The Cruel Prince by Holly Black</li>
+                      <li>All Men are Mortal by Simone de Beauvoir</li>
+                      <li>...</li>
+                    </ol>
+                  </div>
+              
+                  <div>
+                    <p class="font-semibold underline">Movies / Shows</p>
+                    <ol class="list-decimal ml-4 mt-1 space-y-1">
+                      <li>Abbott Elementary</li>
+                      <li>Van Helsing</li>
+                      <li>My Name</li>
+                    </ol>
+                  </div>
+              
+                  <div>
+                    <p class="font-semibold underline">Hobbies</p>
+                    <ol class="list-decimal ml-4 mt-1 space-y-1">
+                      <li>Scrapbooking</li>
+                      <li>Designing</li>
+                      <li>Song Analysis</li>
+                    </ol>
+                  </div>
+              
+                </div>
+              </div>
+        
+              <div class="mt-10 text-center">
+                <p class="mb-2 text-base">Listen to this playlist with my favorite songs →</p>
+                <div class="max-w-xl mx-auto">
+                  <iframe style="border-radius:12px"
+                    src="https://open.spotify.com/embed/playlist/YOUR_PLAYLIST_ID_HERE"
+                    width="100%" height="152" frameBorder="0"
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy"></iframe>
+                </div>
+              </div>
+              
+
+
+  </section>
+
+  <footer class="py-8 px-6 text-center text-sm">
+    <div class="flex items-center justify-center gap-2">
+      <p>Thanks for checking out my website!</p>
+      <img src="images/site-logo.png" alt="Flower" class="w-6 h-6" />
+    </div>
+    <div class="mt-2 space-x-4">
+      <a href="https://www.linkedin.com/in/krista-vera/">LINKEDIN</a>
+      <a href="mailto:krista.bella.vera@gmail.com">EMAIL</a>
+      <a href="https://www.instagram.com/worldinmy_i/">INSTAGRAM</a>
+    </div>
+  </footer>
+</body>
+</html>
