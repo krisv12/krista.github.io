@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agapi Case Study</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+  <style>
+    .handwriting { font-family: 'Patrick Hand', cursive; }
+  </style>
+</head>
+<body class="bg-white text-gray-900 font-sans">
+
+  <!-- Navigation -->
+  <nav class="flex justify-between px-6 py-4 shadow-md sticky top-0 bg-white z-50">
+    <div class="text-xl font-bold">Krista Vera</div>
+    <div class="space-x-6">
+      <a href="index.html">Work</a>
+      <a href="about.html">About Me</a>
+      <a href="resume.html">Resume</a>
+    </div>
+  </nav>
+
+  <main class="max-w-4xl mx-auto px-6 py-12 space-y-16">
+
+    <!-- Hero -->
+    <section class="text-center">
+      <h1 class="text-3xl sm:text-4xl font-bold text-pink-600 handwriting">Agapi Beauty App</h1>
+      <p class="italic mt-1 text-sm">Your beauty. Your voice. One app.</p>
+      <img src="images/Agapi.png" alt="Agapi Hero" class="w-full max-w-2xl mx-auto mt-6 rounded shadow" />
+      <div class="grid grid-cols-2 sm:grid-cols-4 text-sm text-left mt-6 gap-4">
+        <div><strong>Role</strong><br />UX Designer</div>
+        <div><strong>Timeline</strong><br />Fall 2022 – Spring 2023</div>
+        <div><strong>Team</strong><br />Solo + Marketing</div>
+        <div><strong>Tools</strong><br />Figma, Branding, Research</div>
+      </div>
+    </section>
+
+    <!-- Content + Responsibilities -->
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-10" id="content">
+      <div>
+        <h2 class="text-pink-600 handwriting font-bold text-xl mb-2">Content</h2>
+        <ol class="list-decimal list-inside space-y-1 text-sm">
+          <li><a href="#problem" class="text-pink-600 underline">Problem</a></li>
+          <li><a href="#research" class="text-pink-600 underline">User Research</a></li>
+          <li><a href="#insights" class="text-pink-600 underline">Key Insights</a></li>
+          <li><a href="#solution" class="text-pink-600 underline">Solution</a></li>
+          <li><a href="#branding" class="text-pink-600 underline">Branding</a></li>
+          <li><a href="#results" class="text-pink-600 underline">Results</a></li>
+        </ol>
+      </div>
+      <div>
+        <h2 class="text-pink-600 handwriting font-bold text-xl mb-2">My Responsibility</h2>
+        <ul class="list-disc list-inside text-sm space-y-1">
+          <li>Led branding and visual design for Gen Z and millennial skincare users.</li>
+          <li>Designed wireframes and interactive prototypes in Figma.</li>
+          <li>Validated need through user interviews and surveys.</li>
+          <li>Built pitch deck and affiliate revenue model.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Problem -->
+    <section id="problem">
+      <h2 class="text-2xl font-bold text-pink-600 handwriting">Problem</h2>
+      <p class="mt-2 text-sm">It’s not just about breakouts, it’s about self-trust.</p>
+      <ul class="list-decimal list-inside mt-2 text-sm space-y-2">
+        <li><strong>Ingredient Confusion</strong> – Users didn’t know what ingredients meant or how they affected their skin.</li>
+        <li><strong>Insecurity & Second-Guessing</strong> – Concerns about doing things “wrong” created fear and hesitation.</li>
+        <li><strong>Decision Fatigue</strong> – It’s exhausting to compare every product, especially for those with allergies.</li>
+      </ul>
+    </section>
+
+    <!-- Research -->
+    <section id="research">
+      <h2 class="text-2xl font-bold text-pink-600 handwriting mt-10">User Research</h2>
+      <p class="text-sm mt-2">Survey (N = 18) shared via social media and personal networks</p>
+      <img src="agapi images/reviews.png" class="rounded mt-4 w-full max-w-xl" alt="Survey Graph" />
+      <ul class="list-disc list-inside text-sm mt-4 space-y-1">
+        <li>84% rated review difficulty 8+ on a 10-point scale.</li>
+        <li>Ingredient anxiety was a major concern.</li>
+        <li>Clear demand for ingredient transparency and education.</li>
+        <p><em>Takeaway:</em>Users need faster access to trustworthy insights when they’re mid-purchase, not just during research at home.</p>
+
+      </ul>
+
+      <img src="agapi images/chem-bar.png" class="rounded mt-4 w-full max-w-xl" alt="Survey Graph" />
+      <ul class="list-disc list-inside text-sm mt-4 space-y-1">
+        <li>61% of respondents selected a 10, strongly agreeing that they feel conflicted or unsure.</li>
+        <li>Nearly all other responses fell between 7–9, showing that ingr</li>
+        <p><em>Takeaway:</em>  Fear of negative skin reactions is common — users want reassurance that what they’re using is safe for them specifically.</p>
+      </ul>
+
+
+      <img src="agapi images/chemicals.png" class="rounded mt-4 w-full max-w-xl" alt="Survey Graph" />
+      <ul class="list-disc list-inside text-sm mt-4 space-y-1">
+        <li>66.7% said yes, while another 27.8% said maybe, meaning over 94% of respondents expressed at least some interest in ingredient transparency.</li>
+        <li>Only 5.5% said no, confirming that this feature is not only wanted — it's expected.</li>
+        <p><em>Takeaway:</em>There’s a clear demand for simple, educational ingredient breakdowns, not just surface-level claims.</p>
+      </ul>
+    </section>
+
+    <!-- Insights -->
+    <section id="insights">
+      <h2 class="text-2xl font-bold text-pink-600 handwriting mt-10">Key Insights</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4 text-sm">
+        <div class="bg-pink-100 p-4 rounded shadow"><strong>71% didn’t know where to begin</strong><br>Most felt overwhelmed when building a routine.</div>
+        <div class="bg-pink-100 p-4 rounded shadow"><strong>Emotional weight matters</strong><br>Users felt fear, frustration, and shame about skincare choices.</div>
+        <div class="bg-pink-100 p-4 rounded shadow"><strong>Ingredient overload is real</strong><br>Confusion created mistrust in both products and brands.</div>
+      </div>
+    </section>
+
+    <!-- Solution -->
+    <section id="solution">
+      <h2 class="text-2xl font-bold text-pink-600 handwriting mt-10">Solution</h2>
+      <div class="space-y-4 mt-4 text-sm">
+        <div class="bg-pink-50 p-4 rounded shadow">
+          <h3 class="font-semibold text-pink-700">🔬 Smart Ingredient Transparency</h3>
+          <p class="mt-1">Clear, science-backed ingredient explanations tailored to skin types.</p>
+        </div>
+        <div class="bg-pink-50 p-4 rounded shadow">
+          <h3 class="font-semibold text-pink-700">🧴 Personalized Product Suggestions</h3>
+          <p class="mt-1">Short intake form gives users product matches that suit them—not just influencer trends.</p>
+        </div>
+        <div class="bg-pink-50 p-4 rounded shadow">
+          <h3 class="font-semibold text-pink-700">🤝 A Supportive Beauty Community</h3>
+          <p class="mt-1">Safe space to share questions and experiences, especially for beginners.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Branding -->
+    <section id="branding" class="mt-10">
+        <h2 class="text-2xl font-bold text-pink-600 handwriting">Branding</h2>
+      
+        <!-- Color Palette Image -->
+        <img src="agapi images/agapi-colors.png" alt="Color palette"
+             class="rounded mt-4 w-full max-w-md mx-auto" />
+      
+        <!-- Logo + Description -->
+        <div class="flex flex-col md:flex-row gap-6 mt-6 items-center justify-center">
+          <img src="agapi images/agapi-logo.png" alt="Agapi logo"
+               class="w-40 h-40 object-contain" />
+          <p class="text-sm max-w-md">
+            The willow tree symbolizes flexibility. A big part of your purpose in this world is to learn, grow,
+            and evolve through adversity. The tree can bend in wild shapes without snapping.
+          </p>
+        </div>
+      
+        <!-- Persona Card -->
+        <div class="flex justify-center mt-6">
+          <img src="agapi images/agapi-user-prof.png" alt="Agapi persona"
+               class="w-full max-w-md rounded shadow" />
+        </div>
+      </section>
+      
+
+    <!-- Results -->
+    <section id="results" class="mt-10">
+      <h2 class="text-2xl font-bold text-pink-600 handwriting">Results</h2>
+      <p class="text-sm mt-2">Video demo embedded or linked here</p>
+      <div class="mt-4 bg-gray-200 h-48 rounded shadow flex items-center justify-center text-gray-500 italic">[Insert video here]</div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="py-8 px-6 text-center text-sm mt-12 border-t">
+    <div class="flex items-center justify-center gap-2">
+      <p>Thanks for checking out my website!</p>
+      <img src="images/site-logo.png" alt="Flower" class="w-6 h-6" />
+    </div>
+    <div class="mt-2 space-x-4">
+      <a href="https://www.linkedin.com/in/krista-vera/">LINKEDIN</a>
+      <a href="#">EMAIL</a>
+      <a href="https://www.instagram.com/worldinmy_i/">INSTAGRAM</a>
+    </div>
+  </footer>
+
+</body>
+</html>
