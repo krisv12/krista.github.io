@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agapi Case Study</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+  <style>
+    .handwriting { font-family: 'Patrick Hand', cursive; }
+  </style>
+</head>
+<body class="bg-white text-gray-900 font-sans">
+
+  <!-- Navigation -->
+  <nav class="flex justify-between px-6 py-4 shadow-md sticky top-0 bg-white z-50">
+    <div class="text-xl font-bold">Krista Vera</div>
+    <div class="space-x-6">
+      <a href="index.html">Work</a>
+      <a href="about.html">About Me</a>
+      <a href="resume.html">Resume</a>
+    </div>
+  </nav>
+
+  <main class="max-w-4xl mx-auto px-6 py-12 space-y-16">
+
+    <!-- Hero -->
+    <section class="text-center">
+      <h1 class="text-3xl sm:text-4xl font-bold text-pink-600 handwriting">Cafe Swap</h1>
+      <p class="italic mt-1 text-sm"> Swap Your Coffee, Try Something New. </p>
+      <img src="images/cafe swap/cafeswap.png" alt="Agapi Hero" class="w-full max-w-2xl mx-auto mt-6 rounded shadow" />
+      <div class="grid grid-cols-2 sm:grid-cols-4 text-sm text-left mt-6 gap-4">
+        <div><strong class ="text-pink-600">Role</strong><br />UI/UX Designer</div>
+        <div><strong class ="text-pink-600">Timeline</strong><br /> January 2025 – Ongoing</div>
+        <div><strong class ="text-pink-600">Team</strong><br />Solo</div>
+        <div><strong class ="text-pink-600">Tools</strong><br />Figma, Branding, Research</div>
+      </div>
+    </section>
+
+    <!-- Content + Responsibilities -->
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-10" id="content">
+      <div>
+        <h2 class="text-pink-600 handwriting font-bold text-xl mb-2">Content</h2>
+        <ol class="list-decimal list-inside space-y-1 text-sm">
+          <li><a href="#problem" class="text-pink-600 underline">Problem</a></li>
+          <li><a href="#research" class="text-pink-600 underline">User Research</a></li>
+          <li><a href="#insights" class="text-pink-600 underline">Key Insights</a></li>
+          <li><a href="#solution" class="text-pink-600 underline">Solution</a></li>
+          <li><a href="#branding" class="text-pink-600 underline">Branding</a></li>
+          <li><a href="#results" class="text-pink-600 underline">Results</a></li>
+        </ol>
+      </div>
+
+    </section>
+
+    <!-- Problem -->
+    <section id="problem">
+      <h2 class="text-2xl font-bold text-pink-600 handwriting">Problem</h2>
+      <p class="mt-2 text-sm"> New Cafes, New Options</p>
+      <ul class="list-decimal list-inside mt-2 text-sm space-y-2">
+        <li><strong>Order Indecision</strong> – Users go to a new cafe but are unsure of what dirnk to try, and if it will suit their taste.</li>
+        <li><strong>No New Spots</strong> – Users want to try new cafe's but are unsure where to go.</li>
+        <li><strong>Decision Fatigue</strong> – It’s exhausting to spend money on a drink you might not like.</li>
+      </ul>
+    </section>
+
+    <!-- Research -->
+    <section id="research">
+      <h2 class="text-2xl font-bold text-pink-600 handwriting mt-10">User Research</h2>
+      <p class="text-sm mt-2">Survey (N = 30) shared via social media and personal networks</p>
+      <img src="images/cafe-swap/visitcafe.png" class="rounded mt-4 w-full max-w-xl" alt="Survey Graph" />
+      <ul class="list-disc list-inside text-sm mt-4 space-y-1">
+        <li>36.7% visit cafes multiple times a week.</li>
+        <li>Clear market for the app.</li>
+      </ul>
+
+      <img src="images/cafe-swap/trydrinks.png" class="rounded mt-4 w-full max-w-xl" alt="Survey Graph" />
+      <ul class="list-disc list-inside text-sm mt-4 space-y-1">
+        <li>69% of respondents discover new drinks from social media platforms such as TikTok and Instagram.</li>
+        <li>Many users discover new drinks from word of mouth, whether thats from friends or in-store suggestions.</li>
+        <p><em><strong>Takeaway:</strong></em>  Providng a solid platform to discover new drinks would consildate the amount of sources users have to go through to find recommendations.</p>
+      </ul>
+
+
+      <img src="images/cafe-swap/strangerdrink.png" class="rounded mt-4 w-full max-w-xl" alt="Survey Graph" />
+      <ul class="list-disc list-inside text-sm mt-4 space-y-1">
+        <li>A large amount of respondents would be open to the idea of trying a strangers drink .</li>
+        <li>Even the respondents who didn't choose "Absolutely, sounds fun" seem to be open to the idea if they could see reviews/ratings.</li>
+        <p><em><strong>Takeaway:</strong></em> The "Swap" part of the app can be created as long as their is also a review and ratings section.</p>
+      </ul>
+    </section>
+
+    <!-- Insights -->
+    <section id="insights">
+      <h2 class="text-2xl font-bold text-pink-600 handwriting mt-10">Key Insights</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4 text-sm">
+        <div class="bg-pink-100 p-4 rounded shadow"><strong>reviews Matter</strong><br>Users want current reviews of drinks before they decide to purchase one. </div>
+        <div class="bg-pink-100 p-4 rounded shadow"><strong>Dietry Restrictions</strong><br> Having an option for users who have dietry restrictions (dairy free, nut free).</div>
+      </div>
+    </section>
+
+    <!-- Solution -->
+    <section id="solution">
+      <h2 class="text-2xl font-bold text-pink-600 handwriting mt-10">Solution</h2>
+      <div class="space-y-4 mt-4 text-sm">
+        <div class="bg-pink-50 p-4 rounded shadow">
+          <h3 class="font-semibold text-pink-700">🔬 Accurate & Easy-Use Platform</h3>
+          <p class="mt-1">A visually pleasing but simple design, so cafe lovers can get straight to the source!</p>
+        </div>
+        <div class="bg-pink-50 p-4 rounded shadow">
+          <h3 class="font-semibold text-pink-700">🧴 Discover Cafes Based on Personalized Filteres</h3>
+          <p class="mt-1">Users have the ability to curate the types of cafe they would like to discover based on drink and environment suggestions.</p>
+        </div>
+        <div class="bg-pink-50 p-4 rounded shadow">
+          <h3 class="font-semibold text-pink-700">🤝Log Drinks</h3>
+          <p class="mt-1"> Users can log the drinks they've tried from strangers and post drinks so others can try it!</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Branding -->
+    <section id="branding" class="mt-10">
+        <h2 class="text-2xl font-bold text-pink-600 handwriting">Branding</h2>
+      
+        <!-- Color Palette Image -->
+        <img src="images/cafe-swap/cafe-colors.png" Color palette"
+             class="rounded mt-4 w-full max-w-md mx-auto " />
+      
+        <!-- Logo + Description -->
+        <div class="flex flex-col md:flex-row gap-6 mt-6 items-center justify-center">
+          <img src="images/cafe-swap/cafe_swap_logo__1_-removebg-preview.png" alt="Agapi logo"
+               class="w-60 h-60 object-contain" />
+        </div>
+      
+        <!-- Persona Card -->
+        <div class="flex justify-center mt-6">
+          <img src="images/cafe-swap/userprof.png" alt="Agapi persona"
+               class=w-full max-w-2xl rounded shadow" />
+        </div>
+      </section>
+      
+
+    <!-- Results -->
+    <section id="results" class="mt-10">
+      <h2 class="text-2xl font-bold text-pink-600 handwriting">Results</h2>
+      <p class="text-sm mt-2">Video demo embedded or linked here</p>
+      <div class="mt-4 bg-gray-200 h-48 rounded shadow flex items-center justify-center text-gray-500 italic">[Insert video here]</div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="py-8 px-6 text-center text-sm mt-12 border-t">
+    <div class="flex items-center justify-center gap-2">
+      <p>Thanks for checking out my website!</p>
+      <img src="images/site-logo.png" alt="Flower" class="w-6 h-6" />
+    </div>
+    <div class="mt-2 space-x-4">
+      <a href="https://www.linkedin.com/in/krista-vera/">LINKEDIN</a>
+      <a href="#">EMAIL</a>
+      <a href="https://www.instagram.com/worldinmy_i/">INSTAGRAM</a>
+    </div>
+  </footer>
+
+</body>
+</html>
