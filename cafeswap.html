@@ -24,9 +24,9 @@
     
     <div class="text-xl font-bold">Krista Vera</div>
     <div class="space-x-6">
-      <a href="index.html">Home</a>
-      <a href="about.html">About Me</a>
-      <a href="https://drive.google.com/file/d/1AQ-_XFG8Zyz9_VA16qYg7rBmQuw7IbWP/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
+      <a href="index.html"  class="hover:text-pink-600 transition-colors duration-200">Home</a>
+      <a href="about.html"  class="hover:text-pink-600 transition-colors duration-200">About Me</a>
+      <a href="https://drive.google.com/file/d/1AQ-_XFG8Zyz9_VA16qYg7rBmQuw7IbWP/view?usp=sharing" target="_blank" rel="noopener noreferrer"  class="hover:text-pink-600 transition-colors duration-200">Resume</a>
     </div>
   </nav>
 
@@ -102,7 +102,7 @@
     <section id="insights">
       <h2 class="text-2xl font-bold text-pink-600 handwriting mt-10">Key Insights</h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4 text-sm">
-        <div class="bg-pink-100 p-4 rounded shadow"><strong>reviews Matter</strong><br>Users want current reviews of drinks before they decide to purchase one. </div>
+        <div class="bg-pink-100 p-4 rounded shadow"><strong>Reviews Matter</strong><br>Users want current reviews of drinks before they decide to purchase one. </div>
         <div class="bg-pink-100 p-4 rounded shadow"><strong>Dietry Restrictions</strong><br> Having an option for users who have dietry restrictions (dairy free, nut free).</div>
       </div>
     </section>
@@ -153,10 +153,31 @@
     <!-- Results -->
     <section id="results" class="mt-10">
       <h2 class="text-2xl font-bold text-pink-600 handwriting">Results</h2>
-      <p class="text-sm mt-2">Video demo embedded or linked here</p>
-      <div class="mt-4 bg-gray-200 h-48 rounded shadow flex items-center justify-center text-gray-500 italic">[Insert video here]</div>
+      <video width="320" height="240" controls muted>
+        <source src="images/cafe-swap/recording.mp4" type="video/mp4">
+        
+      Your browser does not support the video tag.
+      </video>
     </section>
-    
+    <a href="index.html"
+    class="group relative z-10 inline-flex items-center gap-2 rounded-md px-3 py-2
+           text-gray-700 visited:text-gray-700
+           transition
+           hover:bg-gray-100 hover:text-gray-900 hover:shadow-sm
+           focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black/30">
+   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+        class="h-4 w-4 transition-transform group-hover:-translate-x-1"
+        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+     <path d="M15 19l-7-7 7-7" />
+   </svg>
+   <span class="underline-offset-2 group-hover:underline">Back to Home</span>
+ </a>
+
+
+
+
+
+
   </main>
 
   <!-- Footer -->
